@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionary</title>
     <link rel="stylesheet" href="dict.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main-div">
@@ -15,7 +21,7 @@
             height="45px"
             viewBox="0 -960 960 960"
             width="45px"
-            fill="#1d2222"
+            fill="#b4b4b47c"
           >
             <path
               d="M300-80q-58 0-99-41t-41-99v-520q0-58 41-99t99-41h500v600q-25 0-42.5 17.5T740-220q0 25 17.5 42.5T800-160v80H300Zm-60-267q14-7 29-10t31-3h20v-440h-20q-25 0-42.5 17.5T240-740v393Zm160-13h320v-440H400v440Zm-160 13v-453 453Zm60 187h373q-6-14-9.5-28.5T660-220q0-16 3-31t10-29H300q-26 0-43 17.5T240-220q0 26 17 43t43 17Z"
@@ -27,9 +33,10 @@
             <label for="fonts">
               <select name="fonts" id="fonts">
                 <option value="serif">Serif</option>
-                <option value="sans serif">Sans serif</option>
-                <option value="monospace">Monospace</option>
-                <option value="roboto">Roboto</option>
+                <option value="sans-serif">Sans serif</option>
+                <option value="Monospace">Monospace</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Helvetica">Helvetica</option>
               </select>
             </label>
           </div>
@@ -71,14 +78,14 @@
         </div>
       </nav>
       <div class="inp-div">
-        <input type="text" id="sInput" />
+        <input type="text" id="sInput" autocomplete="none" />
         <!-- <button id="search">search</button> -->
         <div class="s-ic" id="search">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="26px"
+            height="22px"
             viewBox="0 -960 960 960"
-            width="26px"
+            width="22px"
             fill="#660374"
           >
             <path
@@ -91,8 +98,11 @@
       <div id="content">
         <div class="wdph">
           <div>
-            <h1 id="word"></h1>
-            <p id="phone"></p>
+            <div id="wrdph">
+              <h1 id="word"></h1>
+              <p id="phone"></p>
+            </div>
+            <div><audio src=""></audio></div>
           </div>
         </div>
         <div id="meanings"></div>
